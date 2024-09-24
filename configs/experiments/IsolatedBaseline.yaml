@@ -1,0 +1,7 @@
+experiment_name: IsolatedBaseline
+
+base_configs: # No collaboration. Only isolated trainings
+  - paths
+  - training/Isolated
+  - data/MBIsolated
+  - models/CNNPFL

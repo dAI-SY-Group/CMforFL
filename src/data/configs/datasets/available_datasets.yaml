@@ -1,0 +1,15 @@
+MNIST: classification/MNIST.yaml
+MNIST32: classification/MNIST32.yaml
+MNIST3C: classification/MNIST3C.yaml
+MNIST3C32: classification/MNIST3C32.yaml
+
+FashionMNIST: classification/FashionMNIST.yaml
+FashionMNIST3C: classification/FashionMNIST3C.yaml
+FashionMNIST3C32: classification/FashionMNIST3C32.yaml
+
+SVHN: classification/SVHN.yaml
+
+CIFAR10: classification/CIFAR10.yaml
+CIFAR100: classification/CIFAR100.yaml
+
+MixedBenchmark: classification/MixedBenchmark.yaml

@@ -1,0 +1,7 @@
+experiment_name: FingerprintMatchingObject # using only FM based on PACFL and not MM
+
+base_configs: # Collaboration between SVHN, CIFAR-10 and CIFAR-100
+  - paths
+  - training/Collaboration
+  - data/MBFingerprintMatching
+  - models/CNNPFL

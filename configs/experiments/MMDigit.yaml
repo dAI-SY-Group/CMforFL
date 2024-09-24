@@ -1,0 +1,7 @@
+experiment_name: MetadataMatchingDigit 
+
+base_configs: # Collaboration between MNIST and SVHN
+  - paths
+  - training/Collaboration
+  - data/MBMetadataMatchingDigit
+  - models/CNNPFL

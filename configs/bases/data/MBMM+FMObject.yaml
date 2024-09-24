@@ -1,0 +1,25 @@
+#DATA
+data:
+  dataset: MixedBenchmark
+  dataloader: image
+  shape: [3, 32, 32]
+  mean: [0.485, 0.456, 0.406] #assume ImageNet mean and std for now
+  std: [0.229, 0.224, 0.225]
+  train_transformations:
+    ToTensor: []
+    Resize: [[32, 32]]
+    Grayscale_to_RGB: []
+    Normalize: [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]] #  mean and std from https://pytorch.org/vision/stable/models.html
+  val_transformations:
+    ToTensor: []
+    Resize: [[32, 32]]
+    Grayscale_to_RGB: []
+    Normalize: [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]] #  mean and std from https://pytorch.org/vision/stable/models.html
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  client_list: ['CIFAR10', 'CIFAR100']
+  split_clients: [1, 1]
+  num_classes_per_client: [10, 100]
+
+  eval_client_list: ['CIFAR10', 'CIFAR100']

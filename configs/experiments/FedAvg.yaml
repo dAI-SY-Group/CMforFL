@@ -1,0 +1,7 @@
+experiment_name: FedAvg # corresponds to the FedAvg+Tuning experiment that is represented as "All" in the paper
+
+base_configs: # Collaboration between MNIST, FashionMNIST, SVHN, CIFAR-10 and CIFAR-100 
+  - paths
+  - training/Collaboration
+  - data/MBFedAvg
+  - models/CNNPFL

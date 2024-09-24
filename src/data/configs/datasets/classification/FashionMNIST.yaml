@@ -1,0 +1,18 @@
+#DATA
+data:
+  dataset: FashionMNIST
+  dataloader: image
+  mean: [0.2860405969887955,]
+  std: [0.35302424451492237,]
+  shape: [1, 28, 28]
+  train_transformations:
+    ToTensor: []
+    Normalize: [] 
+  val_transformations:
+    ToTensor: []
+    Normalize: [] 
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 10
+num_classes: 10

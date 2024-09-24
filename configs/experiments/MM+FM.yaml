@@ -1,0 +1,7 @@
+experiment_name: Metadata+FingerprintMatchingObject 
+
+base_configs: # Collaboration between CIFAR-10 and CIFAR-100
+  - paths
+  - training/Collaboration
+  - data/MBMM+FMObject 
+  - models/CNNPFL

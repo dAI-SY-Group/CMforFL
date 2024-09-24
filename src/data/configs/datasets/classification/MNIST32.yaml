@@ -1,0 +1,20 @@
+#DATA
+data:
+  dataset: MNIST
+  dataloader: image
+  shape: [1, 32, 32]
+  mean: [0.13066373765468597,]
+  std: [0.30810782313346863,]
+  train_transformations:
+    ToTensor: []
+    Normalize: [] 
+    Resize: [[32, 32]]
+  val_transformations:
+    ToTensor: []
+    Normalize: [] 
+    Resize: [[32, 32]]
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 10
+num_classes: 10

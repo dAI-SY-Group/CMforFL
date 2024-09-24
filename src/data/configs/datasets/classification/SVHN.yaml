@@ -1,0 +1,18 @@
+#DATA
+data:
+  dataset: SVHN
+  dataloader: image
+  mean: [0.4376821, 0.4437697, 0.47280442]
+  std: [0.19803012, 0.20101562, 0.19703614]
+  shape: [3, 32, 32]
+  train_transformations:
+    ToTensor: []
+    Normalize: [] 
+  val_transformations:
+    ToTensor: []
+    Normalize: [] 
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 10
+num_classes: 10
